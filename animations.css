@@ -1,0 +1,72 @@
+.welcome .right .icons1 #img1,#img7{
+    animation-name:img1;
+    animation-delay: 3s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes img1{
+    from {height:100px;}
+    to {height:160px;}
+}
+
+.welcome .right .icons1 #img2,#img9{
+    animation-name:img2;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes img2{
+    from {height:100px;}
+    to {height:140px;}
+}
+
+.welcome .right .icons1 #img3,#img11{
+    animation-name:img3;
+    animation-delay: 0s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes img3{
+    from {height:100px;}
+    to {height:160px;}
+}
+
+.welcome .right .icons1 #img4,#img10{
+    animation-name:img4;
+    animation-delay: 5s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes img4{
+    from {height:100px;}
+    to {height:140px;}
+}
+
+.welcome .right .icons2 #img5,#img8{
+    animation-name:img5;
+    animation-delay: 1.5s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes img5{
+    from {height:100px;}
+    to {height:160px;}
+}
+
+.welcome .right .icons2 #img6,#img12{
+    animation-name:img6;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes img6{
+    from {height:100px;}
+    to {height:144px;}
+}
+

@@ -1,0 +1,494 @@
+/*------------------------IMPORT  SECTION-------------------------*/
+
+@import "utilities.css";
+@import "animations.css";
+@import "responsive.css";
+
+/*------------------------WHOLE  DOCUMENT-------------------------*/
+html{
+    scroll-behavior: smooth;
+    font-size: 12px;
+}
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    --webkit-font-smoothing:antialiased:
+}
+
+/*------------------------HEADER AND NAVIGATION SECTION-------------------------*/
+
+header{
+    position:fixed;
+    max-width:100%;
+    width:100%;
+    overflow: hidden;
+    top : 0;
+}
+.container header nav .navbar{
+    background-color:rgb(12, 12, 12);
+    padding:30px;
+    flex-wrap: wrap;
+    z-index: 4 !important;
+    
+}
+.container header nav .navbar a{
+    padding:5px 30px;
+    font-size:25px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.container header nav .navbar a:link,:active,:visited{
+    color:rgb(255, 147, 108);
+}
+.container header nav .navbar a:hover{
+    color:cyan;
+    transition: .5s ease;
+}
+
+/*------------------------WELCOME SECTION : LEFT PART-------------------------*/
+
+.container{
+    height:650px;
+    width:100%;
+}
+
+.container .welcome{
+    padding:100px;
+    margin-top:50px;
+    height:650px;
+    background-color: black;
+    flex-wrap: wrap;
+}
+
+.container .welcome .left h5 span{
+    color:cyan;
+    font-size: 40px;
+}
+
+.container .welcome .left h2 span{
+    color:cyan;
+    font-size: 60px;
+}
+
+.container .welcome .left > h2{
+    color:ghostwhite;
+    padding-top: 20px;
+    font-size: 45px;
+}
+
+.container .welcome .left > h5{
+    color:ghostwhite;
+    font-size: 32px;
+    padding-bottom: 24px;
+}
+
+.container .welcome .left >p{
+    color:ghostwhite;
+    font-size: 18px;
+}
+
+/*------------------------WELCOME SECTION : RIGHT PART-------------------------*/
+
+.container .welcome .right .icons1 > img{
+    padding:20px;
+}
+
+.container .welcome .right .icons2 > img{
+    padding:20px;
+}
+
+.container .welcome .right .icons1 #img1,#img2,#img3,#img4{
+     height : 100px;
+     padding-top:10px;
+}
+
+.container .welcome .right .icons2 #img5,#img6,#img7,#img8{
+    height:100px;
+    padding-left: 37px;
+}
+
+.container .welcome .right .icons3 #img9,#img10,#img11,#img12{
+    height:100px;
+    padding-left: 37px;
+}
+
+/*------------------------ CONTAINER-2 -------------------------*/
+
+.container2{
+    height:600px;
+    background-color:#00b0bd;
+}
+
+.container2 h2{
+    text-align: center;
+    font-size:45px;
+    border-top:3px solid black;
+    border-bottom:3px solid black;
+    padding:10px;
+    margin:25px;
+    background-color: rgb(95, 95, 95);
+    color:ghostwhite;
+}
+
+.column{
+    float:left;
+    padding :40px;
+}
+
+.container2 .row .left{
+    width:70%;
+    font-size: 30px;
+    padding: 60px;
+    border-right: 3px solid gray;
+    text-align: center;
+}
+
+.container2 .row .right{
+    width:30%;
+}
+
+.container2 .row .right > img{
+    height:350px;
+    margin:20px;
+    margin-left: 40px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*------------------------ ACADEMICS -------------------------*/
+
+.academics{
+    height:670px;
+}
+
+.academics h2{
+    text-align: center;
+    font-size:45px;
+    border-top:3px solid black;
+    border-bottom:3px solid black;
+    padding:10px;
+    margin:25px;
+    background-color: rgb(95, 95, 95);
+    color:ghostwhite;
+}
+
+.timeline-wrapper {
+    position:relative;
+    width: 100%;
+    margin: auto;
+    height: 300px;
+    z-index:-1;
+  }
+
+  .timeline-wrapper .middle-line {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #d9d9d9;
+  }
+
+  .box {
+    width: 33.33%;
+    position: relative;
+    min-height: 300px;
+    float: left;
+  }
+
+  .box .date {
+    position: absolute;
+    top: 50%;
+    left: 200px;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #fff;
+    border: 2px solid #d9d9d9;
+  }
+  .date p {
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 0px;
+  }
+
+  .box .box-content {
+    border-radius: 5px;
+    background-color: #00b0bd;
+    width: 180px;
+    position: absolute;
+    left: 134px;
+    padding: 15px;
+    z-index: 1;
+  }
+  .box-content p {
+    margin: 0;
+    color: white;
+  }
+
+  .box-bottom .box-content {
+    top: 65%;
+  }
+
+  .box-content::before {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid transparent;
+  }
+
+  .box-bottom .box-content::before {
+    border-bottom-color: #00b0bd;
+    top: -20px;
+  }
+  .box-top .box-content::before {
+    border-top-color: #00b0bd;
+    bottom: -20px;
+  }
+
+  .para{
+      font-size: 20px;
+      column-count: 3;
+      margin:50px;
+      column-rule: 2px solid rgb(206, 204, 204);
+      font-weight: 600;
+      background-color: #00b0bd;
+  }
+
+ /*------------------------ ACHIEVEMENTS-------------------------*/
+
+ .achievements{
+    height:max-content;
+    background-color: #00b0bd;
+}
+.achievements h2{
+    text-align: center;
+    font-size:45px;
+    border-top:3px solid black;
+    border-bottom:3px solid black;
+    padding:10px;
+    margin-bottom:25px;
+    margin-left:25px;
+    margin-right:25px;
+    background-color: rgb(95, 95, 95);
+    color:ghostwhite;
+}
+
+.achievements h4{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+*:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .achievements .row .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    margin-top:15px;
+    padding: 0 8px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .achievements .row .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .achievements .row .column .card {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.5);
+    margin:30px;
+  }
+  
+  .achievements .row .column .card .contain {
+    padding: 0 16px;
+    background-color: blanchedalmond;
+  }
+
+  .achievements .row .column .card .contain p{
+      font-size:18px;
+  }
+  
+  .achievements .row .column .card .contain::after,.achievements .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .achievements .row .column .card .contain .title {
+    color: grey;
+  }
+
+/*------------------------ SKILLS -------------------------*/
+
+.skills{
+    height:685px;
+}
+.skills h2{
+    text-align: center;
+    font-size:45px;
+    border-top:3px solid black;
+    border-bottom:3px solid black;
+    padding:10px;
+    margin-bottom:25px;
+    margin-left:25px;
+    margin-right:25px;
+    background-color: rgb(95, 95, 95);
+    color:ghostwhite;
+}
+.skills .mainsection p{
+    font-size: 20px;
+    margin:12px 35px;
+    font-weight: 600;
+}
+
+.skill .mainsection .subsection {
+    background-color: rgb(192, 192, 192);
+    width: 80%;
+    border-radius: 15px;
+    margin:30px;
+}
+
+.skills .mainsection .subsection .skill {
+    background-color:#00b0bd;
+    color:black;
+    padding:5px;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 40px;
+    margin-left:30px;
+    margin-bottom:30px;
+}
+
+.c{
+    width:75%;
+}
+
+.cpp{
+    width:75%;
+}
+.html {
+    width: 85%;
+}
+.css{
+    width:83%
+}
+
+.php {
+    width: 80%;
+}
+
+/*------------------------ HOBBIES -------------------------*/
+
+.hobbies{
+    height:max-content;
+    background-color:#00b0bd;
+}
+
+.hobbies h2{
+    text-align: center;
+    font-size:45px;
+    border-top:3px solid black;
+    border-bottom:3px solid black;
+    padding:10px;
+    margin-bottom:25px;
+    margin-left:25px;
+    margin-right:25px;
+    background-color: rgb(95, 95, 95);
+    color:rgb(255, 255, 255);
+}
+
+.hobbies .center article p{
+    padding:15px;
+    margin:30px;
+    font-size: 23px;
+    background-color: coral;
+    text-align: center;
+}
+
+.hobbies .right2 >img{
+    height:120px;
+    top:0;
+    margin:70px 85px;
+}
+
+/*------------------------ CONTAINER-3 -------------------------*/
+
+.container3 .card-wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 280px;
+   
+}
+
+.container3 .heading{
+    text-align: center;
+    font-size: 56px;
+}
+.container3{
+    height:400px;
+    background-color: rgb(99, 99, 99);
+}
+
+.container3 footer .social{
+    text-align: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px 12px;
+  }
+  
+  .facebook:hover , .instagram:hover, .linkedin:hover {
+      opacity: 0.5;
+  }
+
+  .social{
+      margin:30px;
+  }
+
+  .social p{
+      font-size: 17px;
+  }
+
+  .facebook{
+      height:50px;
+      margin:15px;
+  }
+
+  .instagram{
+      height:50px;
+      margin:15px;
+  }
+
+  .linkedin{
+      height:50px;
+      margin:15px;
+  }
+
+
+
+
+ 
+
+
+
+
